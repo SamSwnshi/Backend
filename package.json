@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "Sameer Suryawanshi",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongodb": "^6.6.1",
     "mongoose": "^8.3.4",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5"
